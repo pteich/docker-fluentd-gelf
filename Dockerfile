@@ -1,4 +1,4 @@
-FROM fluent/fluentd:v0.12-onbuild
+FROM fluent/fluentd:stable-onbuild
 LABEL maintainer="Peter Teich <info@pteich.de>"
 
 RUN apk add --update --virtual .build-deps \
