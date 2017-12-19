@@ -1,4 +1,4 @@
-FROM fluent/fluentd:stable
+FROM fluent/fluentd:edge
 LABEL maintainer="Peter Teich <info@pteich.de>"
 
 RUN apk add --update ca-certificates openssl && update-ca-certificates \ 
