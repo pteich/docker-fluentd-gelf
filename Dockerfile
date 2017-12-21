@@ -4,7 +4,7 @@ LABEL maintainer="Peter Teich <info@pteich.de>"
 RUN apk add --update ca-certificates openssl && update-ca-certificates \ 
  && apk add --virtual .build-deps \
         sudo build-base ruby-dev \    
- && sudo gem install gelf fluent-plugin-gelf-hs \
+ && sudo gem install gelf fluent-plugin-gelf-hs fluent-plugin-docker-metrics fluent-plugin-docker-format \
  && sudo gem sources --clear-all \
  && apk del .build-deps \
  && rm -rf /var/cache/apk/* \
